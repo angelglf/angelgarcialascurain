@@ -25,5 +25,7 @@ Buy a domain (e.g. `angelgarcialascurain.com`), then in the repo go to *Settings
 
 ## Design notes
 
-- Colors and fonts are defined at the top of `style.css` (`:root` variables) — change `--accent` to re-theme the whole site in one line.
-- Fonts: Inter (text) and Newsreader (headings), loaded from Google Fonts.
+- Styled after the classic "Academic" theme (centered profile hero, blue accent, interests/education columns).
+- Colors are defined at the top of `style.css` (`:root` for light mode, `[data-theme="dark"]` for dark mode) — change `--accent` in both to re-theme the whole site.
+- Light/dark mode: the moon button in the nav toggles it; the site also follows the visitor's system preference by default.
+- Font: Inter, loaded from Google Fonts.

@@ -3,12 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ángel García-Lascurain Fernández — Economics PhD Candidate, Arizona State University</title>
-<meta name="description" content="Ángel García-Lascurain Fernández is a PhD candidate in Economics at Arizona State University working on macroeconomics, international economics, and development economics.">
+<title>CV — Ángel García-Lascurain Fernández</title>
+<meta name="description" content="Curriculum vitae of Ángel García-Lascurain Fernández, PhD candidate in Economics at Arizona State University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+(function(){
+  var t;
+  try { t = localStorage.getItem("theme"); } catch(e) {}
+  if (!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
 </head>
 <body>
 
@@ -16,60 +24,109 @@
   <div class="nav-inner">
     <a class="brand" href="index.html">Ángel García-Lascurain</a>
     <nav>
-      <a href="index.html" aria-current="page">About</a>
+      <a href="index.html">About</a>
       <a href="research.html">Research</a>
-      <a href="cv.html">CV</a>
+      <a href="cv.html" aria-current="page">CV</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
     </nav>
   </div>
 </header>
 
 <main>
 
-  <div class="hero">
-    <img class="hero-photo" src="assets/photo.jpg" alt="Portrait of Ángel García-Lascurain Fernández"
-         onerror="this.outerHTML='<div class=&quot;hero-photo&quot; style=&quot;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:2.6rem;color:var(--accent);&quot;>ÁG</div>'">
-    <div>
-      <h1>Ángel García-Lascurain Fernández</h1>
-      <p class="tagline">PhD Candidate in Economics · Arizona State University</p>
-      <p class="prose">I am a PhD candidate in Economics at Arizona State University. My research spans <strong>macroeconomics</strong>, <strong>international economics</strong>, and <strong>development economics</strong>, with a focus on firms, trade, and labor markets in Mexico and North America.</p>
-      <div class="contact-row">
-        <a href="mailto:agarc475@asu.edu">Email</a>
-        <a href="assets/Garcia-Lascurain_CV.pdf">Download CV</a>
-        <a href="https://www.linkedin.com/">LinkedIn</a>
-      </div>
-    </div>
-  </div>
+  <section>
+    <h2>Curriculum Vitae</h2>
+    <p class="prose" style="margin-bottom:1.4rem;">A summary is below; the full CV is available as a PDF.</p>
+    <a class="btn btn-primary" href="assets/Garcia-Lascurain_CV.pdf">Download CV (PDF)</a>
+  </section>
 
   <section>
-    <h2>About</h2>
-    <div class="prose">
-      <p>My current work studies how tariffs and rules of origin reshape North American supply chains, where foreign firms choose to locate in Mexico and what that means for regional welfare, and how labor market power interacts with informality in the Mexican economy.</p>
-      <p>Before starting my PhD, I completed an M.S. in Economics &amp; Computation at Duke University, where I worked as a research assistant for Prof.&nbsp;Matthias Kehrig and Prof.&nbsp;Marjorie McElroy. I previously spent two years as an economist in the General Directorate of Economic Research at Banco de México, and hold a B.A. in Economics from Universidad Iberoamericana in Mexico City.</p>
-      <p>I am expected to complete my PhD in 2027.</p>
+    <h2>Education</h2>
+    <div class="cv-entry">
+      <div class="when">2027 (exp.)</div>
+      <div class="what"><strong>Ph.D. in Economics</strong><span>Arizona State University</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2022</div>
+      <div class="what"><strong>M.S. in Economics &amp; Computation</strong><span>Duke University</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2017</div>
+      <div class="what"><strong>B.A. in Economics</strong><span>Universidad Iberoamericana, Mexico City</span></div>
     </div>
   </section>
 
   <section>
-    <h2>Working Papers</h2>
+    <h2>Research Fields</h2>
+    <p class="prose">Macroeconomics · International Economics · Development Economics</p>
+  </section>
 
-    <div class="card">
-      <h3>Tariffs, Rules of Origin, and the Reorganization of North American Supply Chains</h3>
-      <p>How do firms organize their North American supply chains under different configurations of tariffs and rules of origin? A global sourcing model with heterogeneous firms choosing sourcing sets and USMCA compliance, used to evaluate how tariffs and rules of origin jointly shape compliance rates, supply chain structure, and Mexican welfare.</p>
-      <div class="links"><a href="research.html">Read more →</a></div>
+  <section>
+    <h2>Teaching</h2>
+    <div class="cv-entry">
+      <div class="when">Summer 2025</div>
+      <div class="what"><strong>Macroeconomic Principles</strong><span>Instructor, Arizona State University</span></div>
     </div>
-
-    <div class="card">
-      <h3>Foreign Firm Footprints: Entry, Agglomeration and Welfare in Mexico</h3>
-      <p>What drives foreign and domestic firm entry across Mexican labor markets? Entry patterns estimated via Poisson regression feed counterfactuals on how U.S. tariff impositions would affect firm location, input markets, and welfare across Mexican regions.</p>
-      <div class="links"><a href="research.html">Read more →</a></div>
+    <div class="cv-entry">
+      <div class="when">2023 – 2025</div>
+      <div class="what"><strong>Development Economics</strong><span>Teaching Assistant for Prof. Manjira Datta, Arizona State University (Fall 2023, Spring 2024, Fall 2024, Spring 2025)</span></div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Labor Market Power and Informality <span style="font-weight:400;">(with Octavio Vera)</span></h3>
-      <p>Documents differences in wage markdowns across the formal and informal sectors in Mexico, and proposes a theory linking labor market power to the structure of formal employment costs.</p>
-      <div class="links"><a href="research.html">Read more →</a></div>
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="cv-entry">
+      <div class="when">2018 – 2020</div>
+      <div class="what"><strong>Banco de México</strong><span>Economist (Analyst), General Directorate of Economic Research</span></div>
     </div>
+    <div class="cv-entry">
+      <div class="when">2017</div>
+      <div class="what"><strong>Sura México</strong><span>Trainee, Wealth Management Division</span></div>
+    </div>
+  </section>
 
+  <section>
+    <h2>Research Assistant Experience</h2>
+    <div class="cv-entry">
+      <div class="when">2024 –</div>
+      <div class="what"><strong>Arizona State University</strong><span>for Prof. Samuel Young</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2023 – 2024</div>
+      <div class="what"><strong>Georgetown University in Qatar</strong><span>for Prof. Santiago Garcia-Couto</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2021 – 2022</div>
+      <div class="what"><strong>Duke University</strong><span>for Prof. Matthias Kehrig and Prof. Marjorie McElroy</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Awards</h2>
+    <div class="cv-entry">
+      <div class="when">2026</div>
+      <div class="what"><strong>ASU Dissertation Progress Award in Economics</strong></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2020</div>
+      <div class="what"><strong>Duke Economics Masters Scholar Award</strong></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Other</h2>
+    <div class="cv-entry">
+      <div class="when">2025 –</div>
+      <div class="what"><strong>U.S. Census Bureau</strong><span>Special Sworn Status</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when"></div>
+      <div class="what"><strong>Software</strong><span>Stata, R, Python, Matlab, EViews, LaTeX, Microsoft Office</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when"></div>
+      <div class="what"><strong>Languages</strong><span>English (fluent), Spanish (native)</span></div>
+    </div>
   </section>
 
 </main>
@@ -80,6 +137,15 @@
     <span><a href="mailto:agarc475@asu.edu">agarc475@asu.edu</a></span>
   </div>
 </footer>
+
+<script>
+document.getElementById("themeToggle").addEventListener("click", function () {
+  var root = document.documentElement;
+  var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  try { localStorage.setItem("theme", next); } catch (e) {}
+});
+</script>
 
 </body>
 </html>
